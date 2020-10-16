@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body id="fx-respond">
+  <div id="container">
+    <div id="content" class="fx-tiles">
+      <!-- FULL WIDTH LAYOUT -->
+      <div class="fx-grid fx-cf">
+        <div class="fx-col">
+          <!-- ADD BLOCK(S) HERE -->
+          <!-- START: SHARE BLOCK -->
+          <div class="fx-block fx-purple fx-share fx-align-left fx-cf purple-bg" style="padding:20px ">
+            <div class="fx-copy" style="padding-left:20px; padding-bottom:0">
+              <h2>Anas Quiz</h2>
+              
+              <p><a href="#game" id="start-button" class="fx-btn">Start</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- FULL WIDTH LAYOUT -->
+        <div class="fx-grid fx-cf">
+          <div class="fx-col">
+            <!-- ADD BLOCK(S) HERE -->
+            <div class="fx-block game-container">
+              <div id="game">
+                <div class="game-grid">
+                  <p id="timer" class="timer">
+                    1:00:00
+                  </p>
+                  <div class="game-left-col">
+                    <div class="gauge-container" style="background: #ffffff url('images/icon-01.svg') no-repeat center center; background-size: 100px 100px;">
+                      <canvas id="gauge" class="gauge" width="240" height="240"></canvas>
+                      <div class="score-number">0</div>
+                    </div>
+                  </div>
+                  <div class="game-right-col">
+                    <div class="questions">
+                      <div class="question">
+                        <p><span class="number">1 </span><span class="questionText">World Most Popolated country</span></p>
+                        <div class="answers">
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. India</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. Russia</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="true"><span class="text">C. China</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">D. USA</span></label>
+                        </div>
+                      </div>
+                      <div class="question">
+                        <p><span class="number">2 </span><span class="questionText">Pakistan Current Prime Minister</span></p>
+                        <div class="answers">
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. Liaquat Ali Khan</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B. Saqib Nisar</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C. Shoukat Aziz</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="true"><span class="text">D. Imran Khan</span></label>
+                        </div>
+                      </div>
+                      <div class="question">
+                        <p><span class="number">3 </span><span class="questionText">PSL 2019 Final in which city 
+                        </span></p>
+                        <div class="answers">
+                         <label><input type="checkbox" class="answer" data-correct="true"><span class="text">A. Karachi</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">B.  Lahore</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C.  Dubai</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">D.  Rawalpindi</span></label>
+                        </div>
+                      </div>
+                      <div class="question">
+                        <p><span class="number">4 </span><span class="questionText">CPEC full form</span></p>
+                        <div class="answers">
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. Canada Panama Elictric Corporation</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="true"><span class="text">B. China Pakistan Economic Coridor</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C.  Charsadda Peshawar East Cast  </span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C.  Coke Pepsi Energy Cola  </span></label>
+                        </div>
+                      </div>
+                      <div class="question">
+                        <p><span class="number">4 </span><span class="questionText">Alibaba Founder</span></p>
+                        <div class="answers">
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">A. Bill Gates</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="true"><span class="text">B. Jack Maa</span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C.  Mark Zakurberg  </span></label>
+                          <label><input type="checkbox" class="answer" data-correct="false"><span class="text">C.  Nelson Mandela  </span></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="game-end-times-up">
+                      <p id="time-out-text" class="game-end-text"></p>
+                      <a href="index.html" class="fx-btn">Start Again</a>
+
+                    </div>
+                    <div id="game-end">
+                      <p id="game-end-text" class="game-end-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div id="progress-bar" class="progress-bar">
+                  <div class="indicator current"></div>
+                  <div class="indicator"></div>
+                  <div class="indicator"></div>
+                  <div class="indicator"></div>
+                  <div class="indicator"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>  
+
+    </div>
+  </div>
+  <!-- GLOBAL WRAPPER CSS -->
+  <link rel="stylesheet" type="text/css" href="mi.css" id="globalCSS" />
+  <!-- MASTER RESPONSIVE CSS -->
+  <link rel="stylesheet" type="text/css" href="mi2.css" />
+  <!-- MASTER RESPONSIVE JAVASCRIPT (Keep below footer include) -->
+  <script type="text/javascript" src="jq.js"></script>
+  <script type="text/javascript" src="rsp.js"></script>
+</body>
+<!-- partial -->
+  <script  src="script.js"></script>
+
+</body>
+</html>
